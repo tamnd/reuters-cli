@@ -1,0 +1,10 @@
+title       = "reuters"
+baseURL     = "https://reuters-cli-cli.tamnd.com/"
+description = "Read Reuters world news via RSS"
+contentDir  = "content"
+outputDir   = "public"
+theme       = "tago-doks"
+syntaxHighlight = "true"
+
+[params]
+github = "https://github.com/tamnd/reuters-cli-cli"
