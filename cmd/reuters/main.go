@@ -1,4 +1,4 @@
-// Command reuters is a single-binary command line for reuters-cli.
+// Command reuters is a single-binary command line for Reuters news.
 package main
 
 import (
@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	"github.com/charmbracelet/fang"
-	"github.com/tamnd/reuters-cli-cli/cli"
+	"github.com/tamnd/reuters-cli/cli"
 )
 
 func main() {
