@@ -21,6 +21,9 @@ import (
 // DefaultUserAgent identifies the client to Reuters.
 const DefaultUserAgent = "reuters/dev (+https://github.com/tamnd/reuters-cli)"
 
+// Host is the Reuters site this client represents.
+const Host = "www.reuters.com"
+
 // ErrUnknownSection is returned when an unknown section name is requested.
 var ErrUnknownSection = errors.New("unknown section")
 
