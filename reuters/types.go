@@ -30,17 +30,18 @@ type Item struct {
 
 // NewsItem is the rendered record for the news command.
 type NewsItem struct {
-	Rank    int    `json:"rank"`
-	Title   string `json:"title"`
-	Summary string `json:"summary"`
-	Date    string `json:"date"`
-	URL     string `json:"url"`
+	Rank    int    `json:"rank"             table:"rank"`
+	Title   string `json:"title"   kit:"id" table:"title"`
+	Summary string `json:"summary"          table:"summary"`
+	Date    string `json:"date"             table:"date"`
+	URL     string `json:"url"              table:"url,url"`
+	Section string `json:"section"          table:"section"`
 }
 
 // FeedItem is the rendered record for the feeds command.
 type FeedItem struct {
-	Name string `json:"name"`
-	URL  string `json:"url"`
+	Name string `json:"name" kit:"id" table:"name"`
+	URL  string `json:"url"           table:"url,url"`
 }
 
 var htmlTagRe = regexp.MustCompile(`<[^>]+>`)
